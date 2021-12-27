@@ -1,7 +1,7 @@
 import logging
 from datetime import datetime
 _LOGGER = logging.getLogger(__name__)
-import earnApp
+from . import earnApp
 
 class apiEarnApp:
     def __init__(self):

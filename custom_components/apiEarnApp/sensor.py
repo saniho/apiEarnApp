@@ -63,6 +63,9 @@ class myEarnApp:
     def getmyEarnApp(self):
         return self._myEarnApp
 
+    def getMoney(self):
+        return self._myEarnApp.getMoney()
+
 
 def setup_platform(hass, config, add_entities, discovery_info=None):
     """Set up the platform."""
@@ -91,7 +94,7 @@ class infoEanAppSensor(Entity):
         self._state = None
         self.update = Throttle(interval)(self._update)
         self._sAM = sensorApiEarnApp.manageSensorState()
-        self._sAM.init( self._myEarn.getMoney() )
+        self._sAM.init( self._myEarn )
 
     @property
     def name(self):
