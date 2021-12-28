@@ -36,6 +36,18 @@ class manageSensorState:
 
         status_counts["version"] = __VERSION__
         status_counts["amount"] = self._myEarnApp.getMoney()
+        status_counts["data"] = self._myEarnApp.getData()
+        self._attributes = status_counts
+        self._state = self._myEarnApp.getMoney()
+        return self._state, self._attributes
+
+    def getstatusData(self):
+        state = "unavailable"
+        status_counts = defaultdict(int)
+        status_counts["version"] = self.version
+
+        status_counts["version"] = __VERSION__
+        status_counts["amount"] = self._myEarnApp.getData()
         self._attributes = status_counts
         self._state = self._myEarnApp.getMoney()
         return self._state, self._attributes

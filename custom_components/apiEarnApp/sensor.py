@@ -80,9 +80,10 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
         return False
     myEarn = myEarnApp( token, update_interval )
     myEarn.update()
-    add_entities([infoEanAppSensor(session, name, update_interval, myEarn )], True)
+    add_entities([infoEanAppSensorMoney(session, name, update_interval, myEarn )], True)
+    add_entities([infoEanAppSensorData(session, name, update_interval, myEarn )], True)
 
-class infoEanAppSensor(Entity):
+class infoEanAppSensorMoney(Entity):
     """."""
 
     def __init__(self, session, name, interval, myEarn):
@@ -115,6 +116,51 @@ class infoEanAppSensor(Entity):
         """Update device state."""
         self._myEarn.update()
         self._state, self._attributes = self._sAM.getstatus()
+
+    @property
+    def device_state_attributes(self):
+        """Return the state attributes."""
+        return self._attributes
+
+    @property
+    def icon(self):
+        """Icon to use in the frontend."""
+        return ICON
+
+
+class infoEanAppSensorData(Entity):
+    """."""
+
+    def __init__(self, session, name, interval, myEarn):
+        """Initialize the sensor."""
+        self._session = session
+        self._name = name
+        self._myEarn = myEarn
+        self._attributes = None
+        self._state = None
+        self.update = Throttle(interval)(self._update)
+        self._sAM = sensorApiEarnApp.manageSensorState()
+        self._sAM.init( self._myEarn )
+
+    @property
+    def name(self):
+        """Return the name of the sensor."""
+        return "myEarnApp.data"
+
+    @property
+    def state(self):
+        """Return the state of the sensor."""
+        return self._state
+
+    @property
+    def unit_of_measurement(self):
+        """Return the unit of measurement of this entity, if any."""
+        return "€"
+
+    def _update(self):
+        """Update device state."""
+        self._myEarn.update()
+        self._state, self._attributes = self._sAM.getstatusData()
 
     @property
     def device_state_attributes(self):
