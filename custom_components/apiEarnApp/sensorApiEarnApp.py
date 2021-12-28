@@ -47,9 +47,9 @@ class manageSensorState:
         status_counts["version"] = self.version
 
         status_counts["version"] = __VERSION__
-        status_counts["amount"] = self._myEarnApp.getData()
+        status_counts["volume"] = self._myEarnApp.getData()
         self._attributes = status_counts
-        self._state = self._myEarnApp.getMoney()
+        self._state = self._myEarnApp.getData()
         return self._state, self._attributes
 
 def logSensorState(status_counts):

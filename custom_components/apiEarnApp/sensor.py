@@ -66,6 +66,9 @@ class myEarnApp:
     def getMoney(self):
         return self._myEarnApp.getMoney()
 
+    def getData(self):
+        return self._myEarnApp.getData()
+
 
 def setup_platform(hass, config, add_entities, discovery_info=None):
     """Set up the platform."""
@@ -155,7 +158,7 @@ class infoEanAppSensorData(Entity):
     @property
     def unit_of_measurement(self):
         """Return the unit of measurement of this entity, if any."""
-        return "€"
+        return ""
 
     def _update(self):
         """Update device state."""
