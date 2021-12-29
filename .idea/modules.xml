@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/apiMareeInfo.iml" filepath="$PROJECT_DIR$/.idea/apiMareeInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/apiEarnApp.iml" filepath="$PROJECT_DIR$/.idea/apiEarnApp.iml" />
     </modules>
   </component>
 </project>

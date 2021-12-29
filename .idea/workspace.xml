@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec5b8585-5c78-400c-bcc7-2c2fe6768477" name="Default Changelist" comment="addListePort dans le test">
+    <list default="true" id="ec5b8585-5c78-400c-bcc7-2c2fe6768477" name="Default Changelist" comment="add data volume">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/apiEarnApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/apiEarnApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/sensor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
   </component>
   <component name="RunManager" selected="Python.testEarnApp">
     <configuration name="testEarnApp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="apiMareeInfo" />
+      <module name="apiEarnApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -67,7 +66,7 @@
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_apiMareeInfo.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="apiMareeInfo" />
+      <module name="apiEarnApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -273,7 +272,42 @@
       <option name="project" value="LOCAL" />
       <updated>1623010644284</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="first version">
+      <created>1640641813088</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1640641813088</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add data volume">
+      <created>1640691370520</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1640691370520</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add data volume">
+      <created>1640693753627</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1640693753627</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add data volume">
+      <created>1640810130184</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1640810130184</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add data volume">
+      <created>1640810236156</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1640810236156</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +332,8 @@
     <MESSAGE value="next marée&#10;next marée + 1&#10;&#10;migration de service" />
     <MESSAGE value="next marée&#10;next marée + 1&#10;&#10;migration de service&#10;&#10;addSensorInformation( vent, temperature de l'eau, de l'air etc.. )" />
     <MESSAGE value="addListePort dans le test" />
-    <option name="LAST_COMMIT_MESSAGE" value="addListePort dans le test" />
+    <MESSAGE value="first version" />
+    <MESSAGE value="add data volume" />
+    <option name="LAST_COMMIT_MESSAGE" value="add data volume" />
   </component>
 </project>

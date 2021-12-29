@@ -10,6 +10,8 @@ def testMoney():
   sAM.init(_myEarn )
   state, attributes = sAM.getstatus()
   sensorApiEarnApp.logSensorState( attributes )
+  state, attributes = sAM.getstatusData()
+  sensorApiEarnApp.logSensorState( attributes )
 
 
 testMoney()
