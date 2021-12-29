@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec5b8585-5c78-400c-bcc7-2c2fe6768477" name="Default Changelist" comment="add data volume">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/const.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/manifest.json" afterDir="false" />
     </list>
@@ -299,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640810130184</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add data volume">
+      <created>1640810236156</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1640810236156</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
