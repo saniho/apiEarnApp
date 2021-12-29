@@ -8,6 +8,6 @@ DOMAIN = "apiEarnApp"
 # delai pour l'update http, toutes les 3 heures
 SCAN_INTERVAL_http = datetime.timedelta(seconds=60*60*3)
 
-__VERSION__ = "1.0.0.1"
+__VERSION__ = "1.0.0.2"
 
 __name__ = "apiEarnApp"
