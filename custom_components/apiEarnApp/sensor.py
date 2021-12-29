@@ -113,7 +113,7 @@ class infoEanAppSensorMoney(Entity):
     @property
     def unit_of_measurement(self):
         """Return the unit of measurement of this entity, if any."""
-        return "€"
+        return "$"
 
     def _update(self):
         """Update device state."""
