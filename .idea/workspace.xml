@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec5b8585-5c78-400c-bcc7-2c2fe6768477" name="Default Changelist" comment="add data volume">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/sensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640693753627</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add data volume">
+      <created>1640810130184</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1640810130184</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
