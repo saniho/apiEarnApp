@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ec5b8585-5c78-400c-bcc7-2c2fe6768477" name="Default Changelist" comment="add data volume">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/apiEarnApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/apiEarnApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/earnApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/earnApp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/testapiEarnApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/testapiEarnApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/sensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/sensorApiEarnApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_components/apiEarnApp/sensorApiEarnApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_components/apiEarnApp/testapiEarnApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/testapiEarnApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +49,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projets\apiEarnApp" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.testEarnApp">
     <configuration name="testEarnApp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="apiEarnApp" />
@@ -52,11 +63,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/custom_components/apiEarnApp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/custom_components/apiEarnApp/testApiEarnApp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testApiEarnApp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -65,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_apiMareeInfo.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in C:/Projets/apiEarnApp/Tests/test_apiMareeInfo.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="apiEarnApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,14 +94,14 @@
     </configuration>
     <list>
       <item itemvalue="Python.testEarnApp" />
-      <item itemvalue="Python tests.pytest in test_apiMareeInfo.py" />
+      <item itemvalue="Python tests.pytest in C:/Projets/apiEarnApp/Tests/test_apiMareeInfo.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.testEarnApp" />
-        <item itemvalue="Python tests.pytest in test_apiMareeInfo.py" />
+        <item itemvalue="Python tests.pytest in C:/Projets/apiEarnApp/Tests/test_apiMareeInfo.py" />
         <item itemvalue="Python.testEarnApp" />
-        <item itemvalue="Python tests.pytest in test_apiMareeInfo.py" />
+        <item itemvalue="Python tests.pytest in C:/Projets/apiEarnApp/Tests/test_apiMareeInfo.py" />
         <item itemvalue="Python.testEarnApp" />
       </list>
     </recent_temporary>
@@ -314,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640810377876</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add data volume">
+      <created>1640811104794</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1640811104794</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

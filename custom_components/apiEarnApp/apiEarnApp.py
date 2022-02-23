@@ -33,6 +33,9 @@ class apiEarnApp:
     def getMoney(self):
         return self._money.get("balance",0)
 
+    def getTotalMoney(self):
+        return self._money.get("earnings_total",0)
+
     def getData(self):
         vol = 0
         for device in self._devices:

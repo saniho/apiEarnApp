@@ -29,7 +29,7 @@ class manageSensorState:
         self._LOGGER = _LOGGER
         self.version = version
 
-    def getstatus(self):
+    def getstatusMoney(self):
         state = "unavailable"
         status_counts = defaultdict(int)
         status_counts["version"] = self.version
@@ -38,6 +38,17 @@ class manageSensorState:
         status_counts["amount"] = self._myEarnApp.getMoney()
         self._attributes = status_counts
         self._state = self._myEarnApp.getMoney()
+        return self._state, self._attributes
+
+    def getstatusTotalMoney(self):
+        state = "unavailable"
+        status_counts = defaultdict(int)
+        status_counts["version"] = self.version
+
+        status_counts["version"] = __VERSION__
+        status_counts["amount"] = self._myEarnApp.getTotalMoney()
+        self._attributes = status_counts
+        self._state = self._myEarnApp.getTotalMoney()
         return self._state, self._attributes
 
     def getstatusData(self):

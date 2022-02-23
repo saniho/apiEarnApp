@@ -66,6 +66,9 @@ class myEarnApp:
     def getMoney(self):
         return self._myEarnApp.getMoney()
 
+    def getTotalMoney(self):
+        return self._myEarnApp.getTotalMoney()
+
     def getData(self):
         return self._myEarnApp.getData()
 
@@ -84,6 +87,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     myEarn = myEarnApp( token, update_interval )
     myEarn.update()
     add_entities([infoEanAppSensorMoney(session, name, update_interval, myEarn )], True)
+    add_entities([infoEanAppSensorTotalMoney(session, name, update_interval, myEarn )], True)
     add_entities([infoEanAppSensorData(session, name, update_interval, myEarn )], True)
 
 class infoEanAppSensorMoney(Entity):
@@ -118,7 +122,51 @@ class infoEanAppSensorMoney(Entity):
     def _update(self):
         """Update device state."""
         self._myEarn.update()
-        self._state, self._attributes = self._sAM.getstatus()
+        self._state, self._attributes = self._sAM.getstatusMoney()
+
+    @property
+    def device_state_attributes(self):
+        """Return the state attributes."""
+        return self._attributes
+
+    @property
+    def icon(self):
+        """Icon to use in the frontend."""
+        return ICON
+
+class infoEanAppSensorTotalMoney(Entity):
+    """."""
+
+    def __init__(self, session, name, interval, myEarn):
+        """Initialize the sensor."""
+        self._session = session
+        self._name = name
+        self._myEarn = myEarn
+        self._attributes = None
+        self._state = None
+        self.update = Throttle(interval)(self._update)
+        self._sAM = sensorApiEarnApp.manageSensorState()
+        self._sAM.init( self._myEarn )
+
+    @property
+    def name(self):
+        """Return the name of the sensor."""
+        return "myEarnApp.totalMoney"
+
+    @property
+    def state(self):
+        """Return the state of the sensor."""
+        return self._state
+
+    @property
+    def unit_of_measurement(self):
+        """Return the unit of measurement of this entity, if any."""
+        return "$"
+
+    def _update(self):
+        """Update device state."""
+        self._myEarn.update()
+        self._state, self._attributes = self._sAM.getstatusTotalMoney()
 
     @property
     def device_state_attributes(self):
